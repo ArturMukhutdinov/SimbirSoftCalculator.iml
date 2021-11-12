@@ -1,6 +1,5 @@
 package ru.simbirsof.calculator;
 
-import com.codeborne.selenide.Configuration;
 import org.junit.Test;
 
 import static com.codeborne.selenide.Selenide.open;
@@ -29,7 +28,6 @@ public class CalculatorTest {
         calculator.setEquals();
 
         assertTrue("Значение должно быть ноль",calculator.getCalculatorField());
-        Configuration.holdBrowserOpen = true;
     }
 
 }
